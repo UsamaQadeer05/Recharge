@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cabletvscreen);
-       getSupportActionBar().hide();
+//       getSupportActionBar().hide();
         btnBarcode=findViewById(R.id.btnBarcode);
         btnQRcode=findViewById(R.id.btnQRcode);
 //       btnQRcode.setOnClickListener(new View.OnClickListener() {
