@@ -201,12 +201,6 @@
             android:text="Scan your reference number"
             android:textColor="#fff" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
         <!--        android:drawableStart="@drawable/ic_baseline_qr_code_scanner_24"-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
