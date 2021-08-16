@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background">
+
+    <TextView
+        android:id="@+id/txtcabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cable TV bill"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <RelativeLayout
+        android:layout_width="358dp"
+        android:layout_height="301dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/whitecolor_backgroundroundshape">
+
+        <TextView
+            android:id="@+id/invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#053364"
+            android:text="INVOICE"
+            android:textColor="#053364"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/nayatell"></ImageView>
+
+        <TextView
+            android:id="@+id/txtfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="From"
+            android:textColor="#053364"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtfrom"
+            android:layout_marginLeft="10dp"
+            android:text="American water works"
+            android:textColor="#a4a4a4"
+            android:layout_marginTop="8dp"
+            android:textSize="8dp"></TextView>
+
+        <TextView
+            android:id="@+id/txtbillto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoice"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Bill TO"
+            android:textColor="#053364"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtbillto"
+            android:layout_marginLeft="100dp"
+            android:text="1334 small street, new york"
+            android:textColor="#a4a4a4"
+            android:layout_marginTop="8dp"
+            android:textSize="8dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinvoicenumber"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="6dp"
+            android:text="INVOICE DATE"
+            android:textColor="#053364"
+            android:textSize="12dp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/txtinvoicenum"
+            android:text="245678543"
+            android:textSize="11dp"
+            android:textColor="#a4a4a4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"></TextView>
+        <TextView
+            android:id="@+id/txtinvoicenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoice"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:text="INVOICE #"
+            android:textColor="#053364"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:id="@+id/txtinvoicenum"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/invoice"
+            android:text="101"
+            android:textSize="11dp"
+            android:textColor="#a4a4a4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/txtdescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="105dp"
+            android:text="Description"
+            android:textColor="#053364"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtdescpcustnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtdescrip"
+            android:layout_marginLeft="10dp"
+            android:textColor="#a4a4a4"
+            android:text="Customer's code 12345676542"></TextView>
+        <TextView
+            android:id="@+id/txtdescripbillof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtdescpcustnumber"
+            android:layout_marginLeft="10dp"
+            android:textColor="#a4a4a4"
+            android:text="Your cable television"></TextView>
+
+        <TextView
+            android:id="@+id/txtamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invoice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="20dp"
+            android:text="Amount"
+            android:textColor="#053364"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtcustomercodeamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtamount"
+            android:textSize="11dp"
+            android:textColor="#a4a4a4"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/txtbillofamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtcustomercodeamount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="10dp"
+            android:text="35.00"
+            android:textColor="#a4a4a4"
+            android:textSize="11dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL"
+            android:textColor="#cf1b0a"
+            android:layout_below="@id/txtdescripbillof"
+            android:textStyle="bold"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"></TextView>
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="$35.00 USD"
+            android:layout_below="@id/txtbillofamount"
+            android:layout_alignParentEnd="true"
+            android:textColor="#cf1b0a"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_rectangle_background"
+        android:layout_marginTop="60dp">
+        <Button
+            android:id="@+id/btnotherpaymentoption"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="Other payment option"
+            android:backgroundTint="#bebebe
+"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#32b1da
+"
+            android:layout_below="@id/btnotherpaymentoption"
+            android:text="Pay now"/>
+
+    </RelativeLayout>
+</LinearLayout>
