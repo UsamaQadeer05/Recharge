@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cabletvscreen);
-       getSupportActionBar().hide();
+//       getSupportActionBar().hide();
         btnBarcode=findViewById(R.id.btnBarcode);
         btnQRcode=findViewById(R.id.btnQRcode);
 //       btnQRcode.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final BottomSheetDialog bottomSheetDialog =new BottomSheetDialog(MainActivity.this,R.style.BottomSheetDialogTheme);
-            View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.layout_bottom_sheet, (LinearLayout)findViewById(R.id.bottomSheetContainer));
+            View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.invoicelayout, (LinearLayout)findViewById(R.id.bottomSheetContainer));
             bottomSheetDialog.setContentView(bottomSheetView);
             bottomSheetDialog.show();
         }
