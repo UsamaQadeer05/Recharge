@@ -2,8 +2,10 @@ package com.example.recharge;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 public class MainActivity extends AppCompatActivity {
     Button btnQRcode;
     Button btnBarcode;
+    BottomSheetDialog bottomSheetDialog;
+    View bottomSheetView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 //               btnBarcode.setBackgroundColor(Color.WHITE);
 //            }
 //        });
+
 //        btnBarcode.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -37,17 +42,25 @@ public class MainActivity extends AppCompatActivity {
 //                btnQRcode.setBackgroundColor(Color.WHITE);
 //            }
 //        });
-        Button btnscanreference = findViewById(R.id.btnscanurreferencenumber);
-        btnscanreference.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(MainActivity.this, R.style.BottomSheetDialogTheme);
-                View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.layout_bottom_sheet, (LinearLayout) findViewById(R.id.bottomSheetContainer));
-                bottomSheetDialog.setContentView(bottomSheetView);
-                bottomSheetDialog.show();
-            }
-        });
 
+        Button btnscanreference = findViewById(R.id.btnscanurreferencenumber);
+        btnscanreference.setOnClickListener(v -> {
+            bottomSheetDialog = new BottomSheetDialog(MainActivity.this, R.style.BottomSheetDialogTheme);
+            bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.layout_bottom_sheet, (LinearLayout) findViewById(R.id.bottomSheetContainer));
+            bottomSheetDialog.setContentView(bottomSheetView);
+            bottomSheetDialog.show();
+            new Handler().postDelayed(() -> {
+                Intent i = new Intent(MainActivity.this,
+                        ScanActivity.class);
+                //Intent is used to switch from one activity to another.
+
+                startActivity(i);
+                //invoke the SecondActivity.
+
+                finish();
+                //the current activity will get finished.
+            }, 4000);
+        });
     }
 
 }

@@ -177,7 +177,7 @@
                 <!--                android:layout_height="1dp"-->
                 <!--                android:background="@android:color/darker_gray"/>-->
             </LinearLayout>
-        </RelativeLayout>
+        </RelativeLayout>s
 
         <TextView
             android:layout_width="wrap_content"
@@ -198,6 +198,7 @@
             android:layout_marginTop="20dp"
             android:background="#32b1da"
             android:backgroundTint="#32b1da"
+            android:drawableLeft="@drawable/ic_baseline_qr_code_scanner_24"
             android:text="Scan your reference number"
             android:textColor="#fff" />
 

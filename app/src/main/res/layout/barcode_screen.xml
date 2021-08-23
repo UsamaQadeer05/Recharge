@@ -16,7 +16,9 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385"></ImageButton>
+        app:layout_constraintVertical_bias="0.385">
+
+    </ImageButton>
 
     <Button
         android:id="@+id/btnQRcode"
@@ -24,13 +26,15 @@
         android:layout_height="71dp"
         android:backgroundTint="#32b1da"
         android:text="Scan QR code"
-        android:textColor="#323232"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"></Button>
+        app:layout_constraintVertical_bias="0.886">
+
+    </Button>
 
     <Button
         android:id="@+id/btnBarcode"
@@ -44,5 +48,7 @@
         app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"></Button>
+        app:layout_constraintVertical_bias="0.886">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
